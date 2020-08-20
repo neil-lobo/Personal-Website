@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="./js/cursor.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+		<script src="./js/loadParticles.js"></script>
+		<title>Neil Lobo - Porfolio Site</title>
+	</head>
+	<body>
+		<div class="home">
+			<div class="text-container">
+				<div class="name-container">
+					<p id="name">Neil Lobo_</p>
+				</div>
+				<div class="intro-container">
+					<p id="intro">Welcome to an insight of my life...</p>
+				</div>
+			</div>
+			<div class="button-container">
+				<button class="home-button" onclick="location.href='#about'">
+					ABOUT
+				</button>
+				<button
+					class="home-button"
+					onclick="location.href='#portfolio'"
+				>
+					PORTFOLIO
+				</button>
+				<button class="home-button" onclick="location.href='#contact'">
+					CONTACT
+				</button>
+			</div>
+			<div class="arrow-container">
+				<a href="#about"
+					><img src="./assets/down arrow.svg" id="down-arrow"
+				/></a>
+			</div>
+		</div>
+		<div id="particles-js"></div>
+		<div class="home-border-end"></div>
+		<div class="main-container">
+			<div id="side-progress-bar">
+				<svg
+					width="68"
+					height="68"
+					viewBox="0 0 68 68"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					id="about-landmark"
+					class="landmark"
+					onclick="location.href='#about'"
+				>
+					<g id="landmark 1">
+						<circle
+							id="landmark"
+							cx="34"
+							cy="34"
+							r="31.5"
+							stroke="#0F6BAD"
+							stroke-width="5"
+						/>
+						<circle
+							id="fill"
+							cx="34.5"
+							cy="33.5"
+							r="17.5"
+							fill="#4CAEF5"
+						/>
+					</g>
+				</svg>
+				<div class="progress" id="progress1">
+					<div class="progress-fill"></div>
+				</div>
+				<svg
+					width="68"
+					height="68"
+					viewBox="0 0 68 68"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					id="portfolio-landmark"
+					class="landmark"
+					onclick="location.href='#portfolio'"
+				>
+					<g id="landmark 1">
+						<circle
+							id="landmark"
+							cx="34"
+							cy="34"
+							r="31.5"
+							stroke="#0F6BAD"
+							stroke-width="5"
+						/>
+						<circle
+							id="fill"
+							cx="34.5"
+							cy="33.5"
+							r="17.5"
+							fill="#4CAEF5"
+						/>
+					</g>
+				</svg>
+				<div class="progress" id="progress2">
+					<div class="progress-fill"></div>
+				</div>
+				<svg
+					width="68"
+					height="68"
+					viewBox="0 0 68 68"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					id="contact-landmark"
+					class="landmark"
+					onclick="location.href='#contact'"
+				>
+					<g id="landmark 1">
+						<circle
+							id="landmark"
+							cx="34"
+							cy="34"
+							r="31.5"
+							stroke="#0F6BAD"
+							stroke-width="5"
+						/>
+						<circle
+							id="fill"
+							cx="34.5"
+							cy="33.5"
+							r="17.5"
+							fill="#4CAEF5"
+						/>
+					</g>
+				</svg>
+			</div>
+			<main>
+				<div class="about-container" id="about">
+					<div class="about-header">
+						<p>About Me</p>
+						<img
+							src="./assets/about me.svg"
+							alt="About Me"
+							id="about-svg"
+							class="svg"
+						/>
+					</div>
+					<div class="about-body">
+						<p>This is the about section</p>
+					</div>
+				</div>
+				<div class="portfolio-container" id="portfolio">
+					<div class="portfolio-header">
+						<p>Showcased Projects</p>
+						<img
+							src="./assets/portfolio.svg"
+							alt="portfolio"
+							id="portfolio-svg"
+							class="svg"
+						/>
+					</div>
+					<div class="cards">
+						<div class="card">a</div>
+						<div class="card">a</div>
+						<div class="card">a</div>
+						<div class="card">a</div>
+					</div>
+				</div>
+				<div class="contact-container" id="contact">
+					<div class="contact-header">
+						<p>Get in Touch!</p>
+						<img
+							src="./assets/contact.svg"
+							alt="contact"
+							id="contact-svg"
+							class="svg"
+						/>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+	<script src="./js/progress.js"></script>
+</html>
