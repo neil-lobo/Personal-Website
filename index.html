@@ -9,9 +9,9 @@
 			rel="stylesheet"
 		/>
 		<script src="./js/cursor.js"></script>
-
 		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 		<script src="./js/loadParticles.js"></script>
+		<script src="./js/progress.js" defer></script>
 		<title>Neil Lobo - Porfolio Site</title>
 	</head>
 	<body>
@@ -21,17 +21,17 @@
 					<p id="name">Neil Lobo_</p>
 				</div>
 				<div class="intro-container">
-					<p id="intro">Welcome to an insight of my life...</p>
+					<!-- <p id="intro">Welcome to an insight of my life...</p> -->
+					<p id="intro">
+						A passionate Computer Science student at McMaster University
+					</p>
 				</div>
 			</div>
 			<div class="button-container">
 				<button class="home-button" onclick="location.href='#about'">
 					ABOUT
 				</button>
-				<button
-					class="home-button"
-					onclick="location.href='#portfolio'"
-				>
+				<button class="home-button" onclick="location.href='#portfolio'">
 					PORTFOLIO
 				</button>
 				<button class="home-button" onclick="location.href='#contact'">
@@ -67,13 +67,7 @@
 							stroke="#0F6BAD"
 							stroke-width="5"
 						/>
-						<circle
-							id="fill"
-							cx="34.5"
-							cy="33.5"
-							r="17.5"
-							fill="#4CAEF5"
-						/>
+						<circle id="fill" cx="34.5" cy="33.5" r="17.5" fill="#4CAEF5" />
 					</g>
 				</svg>
 				<div class="progress" id="progress1">
@@ -98,13 +92,7 @@
 							stroke="#0F6BAD"
 							stroke-width="5"
 						/>
-						<circle
-							id="fill"
-							cx="34.5"
-							cy="33.5"
-							r="17.5"
-							fill="#4CAEF5"
-						/>
+						<circle id="fill" cx="34.5" cy="33.5" r="17.5" fill="#4CAEF5" />
 					</g>
 				</svg>
 				<div class="progress" id="progress2">
@@ -129,233 +117,209 @@
 							stroke="#0F6BAD"
 							stroke-width="5"
 						/>
-						<circle
-							id="fill"
-							cx="34.5"
-							cy="33.5"
-							r="17.5"
-							fill="#4CAEF5"
-						/>
+						<circle id="fill" cx="34.5" cy="33.5" r="17.5" fill="#4CAEF5" />
 					</g>
 				</svg>
 			</div>
-			<main>
-				<div class="about-container" id="about">
-					<div class="about-header">
-						<p>About Me</p>
-						<img
-							src="./assets/about me.svg"
-							alt="About Me"
-							id="about-svg"
-							class="svg"
-						/>
+			<div id="content">
+				<main>
+					<div class="about-container" id="about">
+						<div class="about-header">
+							<p>About Me</p>
+							<img
+								src="./assets/about me.svg"
+								alt="About Me"
+								id="about-svg"
+								class="svg"
+							/>
+						</div>
+						<div class="about-body">
+							<p>This is the about section</p>
+						</div>
 					</div>
-					<div class="about-body">
-						<p>This is the about section</p>
-					</div>
-				</div>
-				<div class="portfolio-container" id="portfolio">
-					<div class="portfolio-header">
-						<p>Showcased Projects</p>
-						<img
-							src="./assets/portfolio.svg"
-							alt="portfolio"
-							id="portfolio-svg"
-							class="svg"
-						/>
-					</div>
-					<div class="cards">
-						<div class="card" id="card1">
-							<div class="card-img-container">
-								<div class="github-svg-container">
-									<a
-										href="https://github.com/neil-lobo/School_Dashboard"
-										><img
-											src="./assets/github.svg"
-											alt="View on GitHub!"
-											class="github-svg"
-									/></a>
-								</div>
+					<div class="portfolio-container" id="portfolio">
+						<div class="portfolio-header">
+							<p>Showcased Projects</p>
+							<img
+								src="./assets/portfolio.svg"
+								alt="portfolio"
+								id="portfolio-svg"
+								class="svg"
+							/>
+						</div>
+						<div class="cards">
+							<div class="card" id="card1">
+								<div class="card-img-container">
+									<div class="github-svg-container">
+										<a href="https://github.com/neil-lobo/School_Dashboard"
+											><img
+												src="./assets/github.svg"
+												alt="View on GitHub!"
+												class="github-svg"
+										/></a>
+									</div>
 
-								<img
-									src="./assets/up arrow.svg"
-									alt="See more"
-									class="card-more"
-								/>
-							</div>
-							<div class="card-info">
-								<div class="card-title">School Dashboard</div>
-								<div class="card-description">
-									An in-browser dashboard made with
-									<span class="card-highlight">Python</span>
-									,
-									<span class="card-highlight">Flask</span>,
-									and
-									<span class="card-highlight">MongoDB</span>
-									to keep track of the weather, time, and the
-									classes I had for the day using various
-									APIs.
+									<img
+										src="./assets/up arrow.svg"
+										alt="See more"
+										class="card-more"
+									/>
+								</div>
+								<div class="card-info">
+									<div class="card-title">School Dashboard</div>
+									<div class="card-description">
+										An in-browser dashboard made with
+										<span class="card-highlight">Python</span>
+										,
+										<span class="card-highlight">Flask</span>, and
+										<span class="card-highlight">MongoDB</span>
+										to keep track of the weather, time, and the classes I had
+										for the day using various APIs.
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="card" id="card2">
-							<div class="card-img-container">
-								<div class="github-svg-container">
-									<a
-										href="https://github.com/technowhizzes/RUHacks-2020-COVID-19-Inventory-Management"
-										><img
-											src="./assets/github.svg"
-											alt="View on GitHub!"
-											class="github-svg"
-									/></a>
+							<div class="card" id="card2">
+								<div class="card-img-container">
+									<div class="github-svg-container">
+										<a
+											href="https://github.com/technowhizzes/RUHacks-2020-COVID-19-Inventory-Management"
+											><img
+												src="./assets/github.svg"
+												alt="View on GitHub!"
+												class="github-svg"
+										/></a>
+									</div>
+									<img
+										src="./assets/up arrow.svg"
+										alt="See more"
+										class="card-more"
+									/>
 								</div>
-								<img
-									src="./assets/up arrow.svg"
-									alt="See more"
-									class="card-more"
-								/>
-							</div>
-							<div class="card-info">
-								<div class="card-title">
-									COVID-19 Inventory Management
-								</div>
-								<div class="card-description">
-									<span class="card-highlight"
-										>RU Hacks 2020</span
-									>
-									submition made with
-									<span class="card-highlight">HTML</span>
-									,
-									<span class="card-highlight">CSS</span>, and
-									<span class="card-highlight"
-										>JavaScript</span
-									>
-									with the purpose of providing information on
-									supply retailers and areas in need of
-									supply.
+								<div class="card-info">
+									<div class="card-title">COVID-19 Inventory Management</div>
+									<div class="card-description">
+										<span class="card-highlight">RU Hacks 2020</span>
+										submition made with
+										<span class="card-highlight">HTML</span>
+										,
+										<span class="card-highlight">CSS</span>, and
+										<span class="card-highlight">JavaScript</span>
+										with the purpose of providing information on supply
+										retailers and areas in need of supply.
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="card" id="card3">
-							<div class="card-img-container">
-								<div class="github-svg-container">
-									<a
-										href="https://github.com/technowhizzes/Pills-on-Wheels-HTNE"
-										><img
-											src="./assets/github.svg"
-											alt="View on GitHub!"
-											class="github-svg"
-									/></a>
+							<div class="card" id="card3">
+								<div class="card-img-container">
+									<div class="github-svg-container">
+										<a
+											href="https://github.com/technowhizzes/Pills-on-Wheels-HTNE"
+											><img
+												src="./assets/github.svg"
+												alt="View on GitHub!"
+												class="github-svg"
+										/></a>
+									</div>
+									<img
+										src="./assets/up arrow.svg"
+										alt="See more"
+										class="card-more"
+									/>
 								</div>
-								<img
-									src="./assets/up arrow.svg"
-									alt="See more"
-									class="card-more"
-								/>
-							</div>
-							<div class="card-info">
-								<div class="card-title">Pills on Wheels</div>
-								<div class="card-description">
-									A mobile app created with
-									<span class="card-highlight"
-										>React Native</span
-									>
-									as an "Uber Eats" for prescriptions. A
-									submition for
-									<span class="card-highlight"
-										>Hack The Northeast 2020</span
-									>
+								<div class="card-info">
+									<div class="card-title">Pills on Wheels</div>
+									<div class="card-description">
+										A mobile app created with
+										<span class="card-highlight">React Native</span>
+										as an "Uber Eats" for prescriptions. A submition for
+										<span class="card-highlight">Hack The Northeast 2020</span>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="card" id="card4">
-							<div class="card-img-container">
-								<div class="github-svg-container">
-									<a
-										href="https://github.com/neil-lobo/Personal-Website"
-										><img
-											src="./assets/github.svg"
-											alt="View on GitHub!"
-											class="github-svg"
-									/></a>
+							<div class="card" id="card4">
+								<div class="card-img-container">
+									<div class="github-svg-container">
+										<a href="https://github.com/neil-lobo/Personal-Website"
+											><img
+												src="./assets/github.svg"
+												alt="View on GitHub!"
+												class="github-svg"
+										/></a>
+									</div>
+									<img
+										src="./assets/up arrow.svg"
+										alt="See more"
+										class="card-more"
+									/>
 								</div>
-								<img
-									src="./assets/up arrow.svg"
-									alt="See more"
-									class="card-more"
-								/>
-							</div>
-							<div class="card-info">
-								<div class="card-title">Personal Website</div>
-								<div class="card-description">
-									The site you're on right now! Made
-									completely in
-									<span class="card-highlight">HTML</span>,
-									<span class="card-highlight">CSS</span>, and
-									<span class="card-highlight"
-										>JavaScript</span
-									>, pushing my web dev skills to their
-									limits.
+								<div class="card-info">
+									<div class="card-title">Personal Website</div>
+									<div class="card-description">
+										The site you're on right now! Made completely in
+										<span class="card-highlight">HTML</span>,
+										<span class="card-highlight">CSS</span>, and
+										<span class="card-highlight">JavaScript</span>, pushing my
+										web dev skills to their limits.
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="contact-container" id="contact">
-					<div class="contact-header">
-						<p>Get in Touch!</p>
-						<img
-							src="./assets/contact.svg"
-							alt="contact"
-							id="contact-svg"
-							class="svg"
-						/>
+					<div class="contact-container" id="contact">
+						<div class="contact-header">
+							<p>Get in Touch!</p>
+							<img
+								src="./assets/contact.svg"
+								alt="contact"
+								id="contact-svg"
+								class="svg"
+							/>
+						</div>
+						<div class="form-container">
+							<form
+								id="contact-form"
+								action="https://getform.io/f/88c329ce-387f-4633-8587-dc28db5a425a"
+								method="POST"
+							>
+								<div class="form-name-container">
+									<label for="name">Name</label>
+									<input
+										type="text"
+										name="name"
+										id="form-name"
+										class="form-input"
+										required
+									/>
+								</div>
+								<div class="form-email-container">
+									<label for="email">Email</label>
+									<input
+										type="email"
+										name="email"
+										id="form-email"
+										class="form-input"
+										required
+									/>
+								</div>
+								<div class="form-message-container">
+									<label for="message">Message</label>
+									<textarea
+										type="text"
+										name="message"
+										id="form-message"
+										class="form-input"
+										required
+									></textarea>
+								</div>
+								<input type="submit" class="form-submit" />
+							</form>
+						</div>
 					</div>
-					<div class="form-container">
-						<form
-							id="contact-form"
-							action="https://getform.io/f/88c329ce-387f-4633-8587-dc28db5a425a"
-							method="POST"
-						>
-							<div class="form-name-container">
-								<label for="name">Name</label>
-								<input
-									type="text"
-									name="name"
-									id="form-name"
-									class="form-input"
-									required
-								/>
-							</div>
-							<div class="form-email-container">
-								<label for="email">Email</label>
-								<input
-									type="email"
-									name="email"
-									id="form-email"
-									class="form-input"
-									required
-								/>
-							</div>
-							<div class="form-message-container">
-								<label for="message">Message</label>
-								<textarea
-									type="text"
-									name="message"
-									id="form-message"
-									class="form-input"
-									required
-								></textarea>
-							</div>
-							<input type="submit" class="form-submit" />
-						</form>
-					</div>
-				</div>
-			</main>
+				</main>
+			</div>
 		</div>
 		<footer>
 			<p>Copyright &copy; 2020 Neil Lobo. All rights reserved</p>
 		</footer>
 	</body>
-	<script src="./js/progress.js"></script>
 </html>
