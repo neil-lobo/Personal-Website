@@ -1,4 +1,4 @@
 # Personal-Website
 
 My portfolio website
-neil-lobo.com
+http://neil-lobo.com/
