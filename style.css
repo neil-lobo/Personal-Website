@@ -247,6 +247,18 @@ main {
 	/* height: 300vh; */
 }
 
+.about-body {
+	/* border: green solid 1px; */
+	margin-top: 13px;
+	width: 80%;
+}
+
+.break {
+	display: block;
+	content: "";
+	margin-bottom: 10px;
+}
+
 .portfolio-container {
 	width: 100%;
 }
