@@ -462,11 +462,12 @@ main {
 	border: none;
 	border-radius: 5px;
 	transition-duration: 0.2s;
-	/* height: 25px; */
 	margin-top: 5px;
 	padding: 8px;
 	background-color: #252424;
 	color: #cfcfcf;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 100;
 }
 
 .form-input:focus,
