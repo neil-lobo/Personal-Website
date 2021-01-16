@@ -233,6 +233,9 @@ main {
 
 .about-body {
 	/* border: green solid 1px; */
+	background-color: #1f1f1fd7;
+	padding: 30px;
+	border-radius: 5px;
 	margin-top: 13px;
 	width: 80%;
 }
@@ -396,7 +399,7 @@ main {
 .form-container {
 	width: 70%;
 	margin-top: 20px;
-	background-color: #1f1f1f;
+	background-color: #1f1f1fd7;
 	border-radius: 20px;
 	padding: 60px;
 	transition-duration: 0.3s;
@@ -438,6 +441,7 @@ main {
 
 .form-input {
 	border: none;
+	outline: none;
 	border-radius: 5px;
 	transition-duration: 0.2s;
 	margin-top: 5px;
@@ -477,6 +481,7 @@ main {
 	padding: 8px;
 	border: #0f6bad solid 2px;
 	border-radius: 8px;
+	outline: none;
 	background-color: #1f1f1f;
 	width: 40%;
 	justify-self: center;
